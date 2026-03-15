@@ -1,58 +1,162 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MAKS test</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #e2e8f0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAKS – Binnenkort online</title>
 
-    .card {
-      background: #1e293b;
-      padding: 32px;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-      max-width: 520px;
-      text-align: center;
-    }
+<style>
 
-    h1 {
-      margin-top: 0;
-      font-size: 2rem;
-      color: #14b8a6;
-    }
+:root{
+--dark:#0A1628;
+--card:#16233f;
+--accent:#17c3b2;
+--text:#e6eefc;
+--muted:#9fb3d1;
+}
 
-    p {
-      line-height: 1.6;
-      margin: 12px 0;
-    }
+*{
+box-sizing:border-box;
+}
 
-    .badge {
-      display: inline-block;
-      margin-top: 16px;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: #14b8a6;
-      color: #082f49;
-      font-weight: bold;
-    }
-  </style>
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:linear-gradient(180deg,#081022,#0A1628);
+color:var(--text);
+display:flex;
+align-items:center;
+justify-content:center;
+min-height:100vh;
+padding:20px;
+}
+
+.card{
+background:var(--card);
+max-width:900px;
+width:100%;
+padding:40px;
+border-radius:22px;
+box-shadow:0 20px 40px rgba(0,0,0,.45);
+text-align:center;
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+color:var(--accent);
+letter-spacing:2px;
+margin-bottom:6px;
+}
+
+.subtitle{
+font-size:14px;
+color:var(--muted);
+margin-bottom:30px;
+}
+
+h1{
+margin:0 0 15px;
+font-size:42px;
+color:var(--accent);
+}
+
+p{
+font-size:18px;
+line-height:1.6;
+color:var(--text);
+margin-bottom:18px;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:18px;
+margin-top:30px;
+}
+
+.feature{
+background:rgba(255,255,255,0.05);
+padding:18px;
+border-radius:12px;
+}
+
+.feature-title{
+font-weight:bold;
+color:var(--accent);
+margin-bottom:6px;
+}
+
+.footer{
+margin-top:30px;
+font-size:14px;
+color:var(--muted);
+}
+
+.badge{
+display:inline-block;
+margin-top:15px;
+background:var(--accent);
+color:#062c32;
+padding:10px 18px;
+border-radius:999px;
+font-weight:bold;
+}
+
+</style>
 </head>
+
 <body>
-  <div class="card">
-    <h1>MAKS testpagina</h1>
-    <p>Welkom op mijn eerste test via Coolify.</p>
-    <p>Als je dit ziet, dan rijdt de server netjes volgens dienstregeling.</p>
-    <div class="badge">Deploy geslaagd 🚆</div>
-  </div>
+
+<div class="card">
+
+<div class="logo">MAKS</div>
+<div class="subtitle">Mobile Assistant for Knowledge of Sections</div>
+
+<h1>Binnenkort online</h1>
+
+<p>
+MAKS is een persoonlijk hulpmiddel voor treinbestuurders om ritten,
+lijnkennis en trajecten overzichtelijk bij te houden.
+</p>
+
+<p>
+De applicatie helpt bij het registreren van gereden lijnen,
+het opvolgen van geldigheid van lijnkennis
+en het bewaren van een duidelijk overzicht van trajectervaring.
+</p>
+
+<div class="features">
+
+<div class="feature">
+<div class="feature-title">Ritten logboek</div>
+Registratie van treinen, locomotieven en trajecten.
+</div>
+
+<div class="feature">
+<div class="feature-title">Lijnkennis</div>
+Overzicht van wanneer lijnen laatst bereden zijn.
+</div>
+
+<div class="feature">
+<div class="feature-title">Statistieken</div>
+Inzicht in gereden trajecten en ervaring.
+</div>
+
+<div class="feature">
+<div class="feature-title">Trajectbeheer</div>
+Combinaties van lijnen in België, Nederland en Duitsland.
+</div>
+
+</div>
+
+<div class="badge">Project in ontwikkeling 🚆</div>
+
+<div class="footer">
+Hobbyproject van een treinbestuurder – momenteel in opbouw.
+</div>
+
+</div>
+
 </body>
 </html>
